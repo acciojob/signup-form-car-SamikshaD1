@@ -8,14 +8,17 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form action="submit_signup.php" method="post">
 	<br><lable for="Name">Name</lable>
 	<input type="text" id="name" placeholder="name"/></br>
 	<br>
 	<lable for="email">Email</lable>
 	<input type="email" id="email" placeholder="ayush@gmail.com"/>
     </br>
-	<br><lable for="gender">Gender</lable>
-	<input type="Radio" id="gender_m"/></br>
+	<br><lable for="gender_m">Male</lable>
+	<input type="Radio" id="gender_m" required/></br>
+		<br><lable for="gender_f">Female</lable>
+	<input type="Radio" id="gender_f" required/></br>
 	<br><select id="cars">
 		<option>AUDI</option>
 		<option>THAR</option>
@@ -31,9 +34,8 @@
 		<br>	<label for="password">Password</label>
 		<input type="password" id="password" placeholder="password"/>
 		</br>
-	<input type="button" value="submit">
-	<button type="submit">Submit</button>
-	
+	<button type="submit">Sign Up</button>
+		</form>
 		
 	
     <script type="text/javascript" src="./script.js">
