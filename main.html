@@ -8,34 +8,32 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="submit_signup.php" method="post">
-	<br><lable for="Name">Name</lable>
-	<input type="text" id="name" placeholder="name"/></br>
-	<br>
+	<lable for="name">Name</lable>
+	<input type="text" id="name" name="name" placeholder=""><br>
 	<lable for="email">Email</lable>
-	<input type="email" id="email" placeholder="ayush@gmail.com"/>
-    </br>
-	<br><lable for="gender_m">Male</lable>
-	<input type="Radio" id="gender_m" required/></br>
-		<br><lable for="gender_f">Female</lable>
-	<input type="Radio" id="gender_f" required/></br>
-	<br><select id="cars">
-		<option>AUDI</option>
-		<option>THAR</option>
-		<option>KIA</option>
-	</select></br>
-	<br>
-	<label for="age">Age</lable>
-		<input type="number" id="age" placeholder="age"/>
-	</br>
-		<br><label for="phone number">Phone Number</lable>
-		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"/>
-		</br>	
-		<br>	<label for="password">Password</label>
-		<input type="password" id="password" placeholder="password"/>
-		</br>
-	<button type="submit">Sign Up</button>
-		</form>
+	<input type="email" id="emailemail" name="email" placeholder=""><br>
+	<label>Gender:</label>
+	<input type="radio" id="gender_m" name="gender" value="male" required>
+	<label for="gender_m">Male</label>
+  <input type="radio" id="gender_f" name="gender" value="female" required>
+  <label for="gender_f">Female</label><br>
+	<lable for="car brands">Car Brands:</lable>
+	<select  id="car brands" name="car brands" ><br>
+	<option value="">--Please choose an option--</option>
+		<option value="audi">Audi</option>
+		<option value="thar">Thar</option>
+		<option value="BMW">BMW</option><br>
+	<lable for="age">Age</lable>
+	<input type="number" id="age" name="age" placeholder=""><br>
+	<lable for="dob">DOB</lable>
+	<input type="date" id="dob" name="dob" placeholder=""><br>
+	<lable for="phone-number">Phone Number</lable>
+	<input type="tel" id="phone-number" name="phone-number" placeholder=""><br>
+	<lable for="password">Password</lable>
+	<input type="password" id="password" name="password" placeholder=""><br>
+	<lable for="tos">TOS</lable>
+	<input type="checkbox" id="tos" name="tos" placeholder=""><br>
+	<button type="submit">Submit</button>	
 		
 	
     <script type="text/javascript" src="./script.js">
