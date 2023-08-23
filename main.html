@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<style>
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
 </head>
-
-
-
-
-
-
 <body>
 
 <form action="#" method="post">
@@ -25,7 +43,8 @@
   <label for="gender_m">Male</label>
   <input type="radio" id="gender_f" name="gender" value="female" required>
   <label for="gender_f">Female</label>
-	<label for="cars">Car Brands:</label>
+
+  <label for="cars">Car Brands:</label>
   <select id="cars" name="cars" required>
     <option value="" disabled selected>--Please choose an option--</option>
     <option value="audi">Audi</option>
@@ -41,7 +60,8 @@
 
   <label for="tel">Phone Number:</label>
   <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
-	<label for="password">Password:</label>
+
+  <label for="password">Password:</label>
   <input type="password" id="password" name="password" placeholder="Password" required>
 
   <label>
@@ -52,19 +72,5 @@
   <button type="submit">Sign Up</button>
 </form>
 
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
 </body>
-
 </html>
